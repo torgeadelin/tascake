@@ -15,6 +15,7 @@
 		0B3691AC2304751400A43A72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B3691AA2304751400A43A72 /* LaunchScreen.storyboard */; };
 		0B3691B72304751400A43A72 /* TascakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3691B62304751400A43A72 /* TascakeTests.swift */; };
 		0B3691C22304751400A43A72 /* TascakeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3691C12304751400A43A72 /* TascakeUITests.swift */; };
+		0B3691D223047B8600A43A72 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3691D123047B8600A43A72 /* Todo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		0B3691BD2304751400A43A72 /* TascakeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TascakeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B3691C12304751400A43A72 /* TascakeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TascakeUITests.swift; sourceTree = "<group>"; };
 		0B3691C32304751400A43A72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B3691D123047B8600A43A72 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		0B36919E2304751000A43A72 /* Tascake */ = {
 			isa = PBXGroup;
 			children = (
+				0B3691D023047B6A00A43A72 /* Model */,
 				0B36919F2304751000A43A72 /* AppDelegate.swift */,
 				0B3691A12304751000A43A72 /* SceneDelegate.swift */,
 				0B3691A32304751000A43A72 /* ContentView.swift */,
@@ -134,6 +137,14 @@
 				0B3691C32304751400A43A72 /* Info.plist */,
 			);
 			path = TascakeUITests;
+			sourceTree = "<group>";
+		};
+		0B3691D023047B6A00A43A72 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0B3691D123047B8600A43A72 /* Todo.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +281,7 @@
 				0B3691A02304751000A43A72 /* AppDelegate.swift in Sources */,
 				0B3691A22304751000A43A72 /* SceneDelegate.swift in Sources */,
 				0B3691A42304751000A43A72 /* ContentView.swift in Sources */,
+				0B3691D223047B8600A43A72 /* Todo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

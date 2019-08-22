@@ -10,8 +10,16 @@ import SwiftUI
 
 struct ContentView : View {
     var body: some View {
-        Text("Hello World")
+        NavigationView() {
+            List(data) { todo in
+                TodoItem(todo: todo)
+            }
+            
+            
+        }
+        .navigationBarTitle(Text("Tasks"))
     }
+    
 }
 
 #if DEBUG
@@ -21,3 +29,24 @@ struct ContentView_Previews : PreviewProvider {
     }
 }
 #endif
+
+struct TodoItem : View {
+    var todo: Todo
+    var body: some View {
+        return Group {
+            HStack() {
+                Circle()
+                    .frame(width: 30, height: 30)
+                VStack(alignment: .leading) {
+                    Text(todo.title)
+                        .font(.headline)
+                    Text(todo.text)
+                        .font(.caption)
+                }
+                
+                
+                
+            }
+        }
+    }
+}
